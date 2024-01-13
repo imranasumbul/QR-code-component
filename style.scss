@@ -1,0 +1,117 @@
+@import 'variables';
+@import 'globals';
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+@media (width < 310px){
+    main{
+        display: none;
+    }
+}
+@media (width <= 400px) and (width >= 310px){
+    main{
+        width: 100%;
+        height: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        .content-box{
+            width: 80%;
+            min-height: 200px;
+            
+            background-color: $White;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            .qr-code{
+                width: 90%;
+                
+
+                img{
+                    border-radius: 10px;
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+
+            .text-content-box{
+                width: 80%;
+                .text-content{
+                    text-align: center;
+                   
+                    .bolder-tex{
+                        color: $Dark-blue;
+                        font-weight: 700;
+                        font-size: 20px;
+                    }
+                    p{
+                        color: $Grayish-blue;
+                        font-weight: 400;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (width >= 400px){
+    main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        .content-box{
+            width: 330px;
+            min-height: 300px;
+            background-color: $White;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+
+            .qr-code{
+                width: 90%;
+                img{
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+
+            .text-content-box{
+                width: 80%;
+                .text-content{
+                    text-align: center;
+                   
+                    .bolder-tex{
+                        color: $Dark-blue;
+                        font-weight: 700;
+                        font-size: 20px;
+                    }
+                    p{
+                        color: $Grayish-blue;
+                        font-weight: 400;
+                        font-size: 15px;
+                    }
+                }
+            }
+
+        }
+    }
+}

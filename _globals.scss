@@ -18,6 +18,10 @@ body{
     line-height: 1.2;
     font-family: "Outfit", sans-serif;
     background-color: $Light-gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 
